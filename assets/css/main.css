@@ -1390,10 +1390,19 @@
 		.row .column {
 			width: 50%;
 		}
+		.row .column-left {
+			width: 50%;
+			padding-left: 1.5em;
+		}
 	}
 
 	@media screen and (max-width: 500px) {
 		.row .column {
+			padding-left: 1.5em;
+			width: 100%;
+		}
+		.row .column-left {
+			padding-left: 1.5em;
 			width: 100%;
 		}
 	}
