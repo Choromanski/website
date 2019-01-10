@@ -122,6 +122,24 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+				$.getJSON('https://ipinfo.io/json', function(data) {
+					data = JSON.stringify(data, null, 2);
+					sessionStorage.setItem('ip', data);
+					document.dispatchEvent(new Event('Refresh'));
+				});
+				document.addEventListener('Refresh', function(self) {
+						return function(e) {
+								ip = JSON.parse(sessionStorage.getItem('ip'))
+
+								var xhr = new XMLHttpRequest();
+								xhr.open("POST", "https://choromanski.herokuapp.com/ip/", true);
+								xhr.setRequestHeader("Content-Type", "application/json");
+								data = JSON.stringify({ip: ip, page: window.location.href.split('com')[1]});
+								xhr.send(data);
+						}
+				}(this));
+			</script>	
 
 	</body>
 </html>
