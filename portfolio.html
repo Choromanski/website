@@ -32,6 +32,18 @@
 			  border: 1px solid #ddd;
 			  margin-bottom: 12px;
 			}
+			.collapsible:hover {
+			  background-color: rgba(255, 255, 255, 0.075);
+			}
+			.content {
+			  padding: 0 18px;
+			  display: none;
+			  overflow: hidden;
+			}
+			h2.collapsible {
+			  padding: 1em 0 1em 1em;
+			  margin: 0;
+			}
 		</style>
 	</head>
 	<body>
@@ -81,199 +93,198 @@
 						<div class="wrapper">
 							<div class="inner">
 								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter projects.." title="Type in a name">
-								</br>
 								<div id="allProjects">
 								<!-- 1501 -->
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Java" class="devicon-java-plain"></i>
 											Autocomplete 
 										</h2>
-										<p>Dictionary autocomplete implementation using a de la Briandais Trie. 
+										<div class="content"><p>Dictionary autocomplete implementation using a de la Briandais Trie. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/autocomplete" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/autocomplete/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Java" class="devicon-java-plain"></i>
 											LZW Compression 
 										</h2>
-										<p>Implementation of LZW compression used to compress/expand any file. 
+										<div class="content"><p>Implementation of LZW compression used to compress/expand any file. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/LZW-Compression" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/LZW-Compression/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Java" class="devicon-java-plain"></i>
 											Apartment 
 										</h2>
-										<p>Implementing an indexable priority queue to help users select an apartment to rent. 
+										<div class="content"><p>Implementing an indexable priority queue to help users select an apartment to rent. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/apartment-tracker" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/apartment-tracke/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Java" class="devicon-java-plain"></i>
 											Network Analysis 
 										</h2>
-										<p>Using graph algorithms to analyze theoretical networks being represented by weighted graphs. 
+										<div class="content"><p>Using graph algorithms to analyze theoretical networks being represented by weighted graphs. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/network-analysis" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/network-analysis/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Java" class="devicon-java-plain"></i>
 											RSA-Sign
 										</h2>
-										<p>512-bit RSA keypair generation and signature generation/verification. 
+										<div class="content"><p>512-bit RSA keypair generation and signature generation/verification. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/RSA-Sign" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/RSA-Sign/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 								<!-- 449 -->
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Rock, Paper, Scissors 
 										</h2>
-										<p>Game of rock, paper, scissors.
+										<div class="content"><p>Game of rock, paper, scissors.
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/rps" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/rps/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Strings 
 										</h2>
-										<p>Implementation of the "strings" unix command written in C. 
+										<div class="content"><p>Implementation of the "strings" unix command written in C. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/strings" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/strings/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											bmpEdit 
 										</h2>
-										<p>Invert or add grayscale to a bmp image.
+										<div class="content"><p>Invert or add grayscale to a bmp image.
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/bmpEdit" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/bmpEdit/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Password 
 										</h2>
-										<p>Cracking the password of compiled C programs. 
+										<div class="content"><p>Cracking the password of compiled C programs. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/password-crack" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/password-crack/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Best Fit Malloc 
 										</h2>
-										<p>Implementation of malloc and free using the best fit memory allocation method. 
+										<div class="content"><p>Implementation of malloc and free using the best fit memory allocation method. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/bestfit-malloc" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/bestfit-malloc/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											RPS Device Driver 
 										</h2>
-										<p>Game of rock, paper, scissors that utilizes a custom device driver to generate random moves for the computer.
+										<div class="content"><p>Game of rock, paper, scissors that utilizes a custom device driver to generate random moves for the computer.
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/rps-device-driver" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/rps-device-driver/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Shell 
 										</h2>
-										<p>Implementation of shell written in C exclusively using system calls. 
+										<div class="content"><p>Implementation of shell written in C exclusively using system calls. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/shell" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/shell/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 								<!-- 447 -->
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="MIPS" class="fas fa-microchip"></i>
 											Pac-Man 
 										</h2>
-										<p>My rendition of Pac-Man written entirely in MIPS assembly. 
+										<div class="content"><p>My rendition of Pac-Man written entirely in MIPS assembly. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/Pac-Man" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/Pac-Man/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Logisim" class="fas fa-code"></i>
 											jrMIPS 
 										</h2>
-										<p>Single cycle processor built in Logisim to resemble MIPS. 
+										<div class="content"><p>Single cycle processor built in Logisim to resemble MIPS. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/jrMIPS" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/jrMIPS/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 								<!-- MISC. -->
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="NodJS" class="devicon-nodejs-plain"></i>
 											Pitt-CLI - Collaborator/Maintainer
 										</h2>
-										<p>Command line interface providing useful utilities for pitt students.
+										<div class="content"><p>Command line interface providing useful utilities for pitt students.
 											<ul class="actions">
 												<li><a title="npm" href="https://www.npmjs.com/package/pitt-cli" class="button special"><i class="icon-npm"></i> npm</a></li>
 												<li><a title="GitHub" href="https://github.com/djm158/pitt-cli" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/djm158/pitt-cli/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											xorg-server patch 
 										</h2>
-										<p>Patch for xorg-server that resolves issue with cursor being confined when using "--scale" parameter with xrandr. 
+										<div class="content"><p>Patch for xorg-server that resolves issue with cursor being confined when using "--scale" parameter with xrandr. 
 											<ul class="actions">
 												<li><a title="Launchpad" href="https://launchpad.net/~choromanski/+archive/ubuntu/xorg" class="button special"><i class="icon-ubuntu"></i> Launchpad</a></li>
 											</ul>
@@ -291,67 +302,67 @@
 												<li><a title="GitHub" href="https://github.com/Choromanski/xorg-server-hwe-16.04" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/xorg-server-hwe-16.04/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="Linux" class="devicon-linux-plain"></i>
 											Dotfiles 
 										</h2>
-										<p>My current dotfiles and configuration of my computer running Ubuntu 16.04.3. 
+										<div class="content"><p>My current dotfiles and configuration of my computer running Ubuntu 16.04.3. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/dotfiles" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/dotfiles/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Ergodox Configuration 
 										</h2>
-										<p>My current configuration for my Ergodox Infinity keyboard. Compiled using <a href="https://github.com/qmk/qmk_firmware"><i class="fab fa-github"></i> qmk/qmk_firmware</a>. 
+										<div class="content"><p>My current configuration for my Ergodox Infinity keyboard. Compiled using <a href="https://github.com/qmk/qmk_firmware"><i class="fab fa-github"></i> qmk/qmk_firmware</a>. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/ergodox" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/ergodox/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="C" class="devicon-c-plain"></i>
 											Preonic Configuration 
 										</h2>
-										<p>My current configuration for my OLKB Preonic keyboard. Compiled using  <a href="https://github.com/qmk/qmk_firmware"><i class="fab fa-github"></i> qmk/qmk_firmware</a>. 
+										<div class="content"><p>My current configuration for my OLKB Preonic keyboard. Compiled using  <a href="https://github.com/qmk/qmk_firmware"><i class="fab fa-github"></i> qmk/qmk_firmware</a>. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/preonic" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/preonic/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="HTML5" class="devicon-html5-plain"></i>
 											Website 
 										</h2>
-										<p>This website's source code. 
+										<div class="content"><p>This website's source code. 
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/website" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/website/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 									<div name="project">
-										<h2 class="major">
+										<h2 class="major collapsible">
 											<i title="LaTeX" class="fas fa-file-pdf"></i>
 											Resume 
 										</h2>
-										<p>Resume source code, written in LaTeX.
+										<div class="content"><p>Resume source code, written in LaTeX.
 											<ul class="actions">
 												<li><a title="GitHub" href="https://github.com/Choromanski/Resume" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
 												<li><a title="Download" href="https://github.com/Choromanski/Resume/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
 											</ul>
-										</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -417,108 +428,20 @@
 						}
 					}
 				}
-				$.getJSON('https://ipinfo.io/json', function(data) {
-					data = JSON.stringify(data, null, 2);
-					sessionStorage.setItem('ip', data);
-					document.dispatchEvent(new Event('Refresh'));
-				});
-				document.addEventListener('Refresh', function(self) {
-						return function(e) {
-								ip = JSON.parse(sessionStorage.getItem('ip'))
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
 
-								var xhr = new XMLHttpRequest();
-								xhr.open("POST", "https://choromanski.herokuapp.com/ip/", true);
-								xhr.setRequestHeader("Content-Type", "application/json");
-								data = JSON.stringify({ip: ip, page: window.location.href.split('com')[1]});
-								xhr.send(data);
-						}
-				}(this));
-			</script>
-
-	</body>
-</html>ski/preonic/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
-										</ul>
-									</p>
-								</div>
-								<p style="position:relative;">
-									<a id="website" style="position:absolute; top:-5em;"></a>
-								</p>
-								<div>
-									<h2 class="major">
-										<i title="HTML5" class="devicon-html5-plain"></i>
-										Website 
-									</h2>
-									<p>This website's source code. 
-										<ul class="actions">
-											<li><a title="GitHub" href="https://github.com/Choromanski/website" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
-											<li><a title="Download" href="https://github.com/Choromanski/website/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
-										</ul>
-									</p>
-								</div>
-								<p style="position:relative;">
-									<a id="resume" style="position:absolute; top:-5em;"></a>
-								</p>
-								<div>
-									<h2 class="major">
-										<i title="LaTeX" class="fas fa-file-pdf"></i>
-										Resume 
-									</h2>
-									<p>Resume source code, written in LaTeX.
-										<ul class="actions">
-											<li><a title="GitHub" href="https://github.com/Choromanski/Resume" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
-											<li><a title="Download" href="https://github.com/Choromanski/Resume/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
-										</ul>
-									</p>
-								</div>
-							</p>
-							</div>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contact</h2>
-							<div class="row 0%">
-								<div class="column-left">
-									<ul class="contact">
-										<li class="fa-home">
-											3729 Parkview Ave<br />
-											Pittsburgh, PA 15213
-										</li>
-										<li class="fa-key">
-											<a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x4C0261AF67B89CBC">
-												PGP Encryption Key
-											</a>
-									</ul>
-								</div>
-								<div class="column">
-									<ul class="contact">
-										<li class="fa-phone">
-											<a href="tel:2154315784">
-												(215) 431-5784
-											</a>
-										</li>
-										<li class="fa-envelope">
-											<a href="mailto:brian@choroman.ski">
-												Brian@Choroman.ski
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script>
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = this.nextElementSibling;
+				    if (content.style.display === "block") {
+				      content.style.display = "none";
+				    } else {
+				      content.style.display = "block";
+				    }
+				  });
+				}
 				$.getJSON('https://ipinfo.io/json', function(data) {
 					data = JSON.stringify(data, null, 2);
 					sessionStorage.setItem('ip', data);
