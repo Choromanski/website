@@ -95,7 +95,11 @@
 						<!-- Content -->
 						<div class="wrapper">
 							<div class="inner">
-								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter projects.." title="Type in a name">
+								<input type="text" id="myInput" onkeyup="filter()" placeholder="Filter projects.." title="Type in a name">
+								<input type="checkbox" id="java" name="java"><label for="java">Java</label><br />
+								<input type="checkbox" id="c" name="c"><label for="c">C</label><br />
+								<input type="checkbox" id="python" name="python"><label for="python">Python</label><br />
+								<input type="checkbox" id="other" name="other"><label for="other">Other</label><br />
 								<div id="allProjects">
 								<!-- 1501 -->
 									<div name="project">
@@ -416,7 +420,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script>
-				function myFunction() {
+				function filter() {
 					var input, filter, projects, a, i, txtValue;
 					input = document.getElementById("myInput");
 					filter = input.value.toUpperCase();
