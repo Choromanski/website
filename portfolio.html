@@ -507,49 +507,46 @@
 				}
 			}
 			function checkbox(){
-			var checkbox = document.getElementsByTagName("input");
-			var language = []
-			var cs = []
-			for(var i = 1; i < checkbox.length; i++){
-			if(checkbox[i].checked == true){
-			if(checkbox[i].id.startsWith("cs")){
-			cs.push(checkbox[i].id)
-			}else{
-			language.push(checkbox[i].id)
+				var checkbox = document.getElementsByTagName("input");
+				var language = []
+				var cs = []
+				for(var i = 1; i < checkbox.length; i++){
+					if(checkbox[i].checked == true){
+						if(checkbox[i].id.startsWith("cs")){
+							cs.push(checkbox[i].id)
+						}else{
+							language.push(checkbox[i].id)
+						}
+					}
+				}
+				var projects = document.getElementsByName("filter")
+				for(var i = 0; i < projects.length; i++){
+					if(language.length == 0 && cs.length == 0){
+						projects[i].style.display = "";
+					}else if(language.length == 0){
+						if(cs.includes(projects[i].classList[0])){
+							projects[i].style.display = "";
+						}else{
+							projects[i].style.display = "none";
+						}
+					}else if(cs.length == 0){
+						if(language.includes(projects[i].classList[1])){
+							projects[i].style.display = "";
+						}else{
+							projects[i].style.display = "none";
+						}
+					}else{
+						if(cs.includes(projects[i].classList[0]) && language.includes(projects[i].classList[1])){
+							projects[i].style.display = "";
+						}else{
+							projects[i].style.display = "none";
+						}
+					}
+				}
 			}
-			}
-			}
-			var projects = document.getElementsByName("filter")
-			for(var i = 0; i < projects.length; i++){
-			if(language.length == 0 && cs.length == 0){
-			projects[i].style.display = "";
-			}else if(language.length == 0){
-			if(cs.includes(projects[i].classList[0])){
-			projects[i].style.display = "";
-			}else{
-			projects[i].style.display = "none";
-			}
-			}else if(cs.length == 0){
-			if(language.includes(projects[i].classList[1])){
-			projects[i].style.display = "";
-			}else{
-			projects[i].style.display = "none";
-			}
-			}else{
-			if(cs.includes(projects[i].classList[0]) && language.includes(projects[i].classList[1])){
-			projects[i].style.display = "";
-			}else{
-			projects[i].style.display = "none";
-			}
-			}
-			}
-			console.log(cs.includes(projects[0].classList[0]))
-			console.log(cs)
-			console.log(projects[0].classList)
-			}
+
 			var coll = document.getElementsByClassName("collapsible");
 			var i;
-			
 			for (i = 0; i < coll.length; i++) {
 				coll[i].addEventListener("click", function() {
 				this.classList.toggle("active");
@@ -561,6 +558,7 @@
 				}
 				});
 			}
+			
 			$.getJSON('https://ipinfo.io/json', function(data) {
 				data = JSON.stringify(data, null, 2);
 				sessionStorage.setItem('ip', data);
