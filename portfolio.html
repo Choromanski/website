@@ -14,14 +14,7 @@
 		<link rel="shortcut icon" href="https://i.imgur.com/4ZHaW0D.png" type="image/gif">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]>
-		<link rel="stylesheet" href="assets/css/ie9.css" />
-		<![endif]-->
-		<!--[if lte IE 8]>
-		<link rel="stylesheet" href="assets/css/ie8.css" />
-		<![endif]-->
 		<script type="text/javascript">
 			window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
 			heap.load("1288622441");
@@ -94,21 +87,105 @@
 					<div class="inner">
 						<input type="text" id="myInput" onkeyup="filter()" placeholder="Search projects.." title="Type in a name">
 						<div class="row">
-							<div class="3u 6u$(medium)">
+							<div class="3u 12u$(medium)">
 								<br />
 								<h3>Language:</h3>
-								<input type="checkbox" id="java" name="java" onclick="checkbox()"><label for="java">Java</label><br />
+								<input type="checkbox" id="java" name="java" onclick="checkbox()" style=""><label for="java">Java</label><br />
 								<input type="checkbox" id="c" name="c" onclick="checkbox()"><label for="c">C</label><br />
 								<input type="checkbox" id="python" name="python" onclick="checkbox()"><label for="python">Python</label><br />
+								<input type="checkbox" id="ruby" name="ruby" onclick="checkbox()"><label for="ruby">Ruby</label><br />
+								<input type="checkbox" id="javascript" name="javascript" onclick="checkbox()"><label for="javascript">JavaScript</label><br />
+								<input type="checkbox" id="html" name="hmtl" onclick="checkbox()"><label for="html">HTML</label><br />
 								<input type="checkbox" id="other" name="other" onclick="checkbox()"><label for="other">Other</label><br />
 								<h3>Class</h3>
+								<input type="checkbox" id="cs1632" name="cs1632" onclick="checkbox()"><label for="cs1632">Software QA</label><br />
+								<input type="checkbox" id="cs1520" name="cs1520" onclick="checkbox()"><label for="cs1520">Web Applications</label><br />
+								<input type="checkbox" id="cs1550" name="cs1550" onclick="checkbox()"><label for="cs1550">Operating Systems</label><br />
 								<input type="checkbox" id="cs1501" name="cs1501" onclick="checkbox()"><label for="cs1501">Algorithms</label><br />
 								<input type="checkbox" id="cs449" name="cs449" onclick="checkbox()"><label for="cs449">System Software</label><br />
-								<input type="checkbox" id="cs447" name="cs447" onclick="checkbox()"><label for="cs447">Assembly Language</label><br />
+								<input type="checkbox" id="cs447" name="cs447" onclick="checkbox()"><label for="cs447">Assembly</label><br />
 								<input type="checkbox" id="csmisc" name="csmisc" onclick="checkbox()"><label for="csmisc">Misc.</label><br />
 							</div>
-							<div class="9u 18u$(medium)">
+							<div class="9u 12u$(medium)">
 								<div id="allProjects">
+									<!-- 1632 -->
+									<div name="filter" class="cs1632 ruby">
+										<div name="project">
+											<h2 class="major collapsible">
+												<i title="Ruby" class="devicon-ruby-plain"></i>
+												cs1632 stuff 
+											</h2>
+											<div class="content" class="csmisc other">
+												<p>Add stuff for 1632, update links too
+												<ul class="actions">
+													<li><a title="GitHub" href="https://github.com/djm158/pitt-cli" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
+													<li><a title="Download" href="https://github.com/djm158/pitt-cli/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- 1520 -->
+									<div name="filter" class="cs1520 python">
+										<div name="project">
+											<h2 class="major collapsible">
+												<i title="Python" class="devicon-python-plain"></i>
+												cs1520 Python stuff 
+											</h2>
+											<div class="content" class="csmisc other">
+												<p>Add stuff for 1520 Python, update links too
+												<ul class="actions">
+													<li><a title="GitHub" href="https://github.com/djm158/pitt-cli" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
+													<li><a title="Download" href="https://github.com/djm158/pitt-cli/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div name="filter" class="cs1520 javascript">
+										<div name="project">
+											<h2 class="major collapsible">
+												<i title="JavaScript" class="devicon-javascript-plain"></i>
+												cs1520 JavaScript stuff 
+											</h2>
+											<div class="content" class="csmisc other">
+												<p>Add stuff for 1520 JavaScript, update links too (maybe a live link)
+												<ul class="actions">
+													<li><a title="GitHub" href="https://github.com/djm158/pitt-cli" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
+													<li><a title="Download" href="https://github.com/djm158/pitt-cli/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div name="filter" class="cs1520 html">
+										<div name="project">
+											<h2 class="major collapsible">
+												<i title="HTML5" class="devicon-html5-plain"></i>
+												cs1520 html stuff 
+											</h2>
+											<div class="content">
+												<p>Add stuff for 1520 html, update links too (maybe a live link)
+												<ul class="actions">
+													<li><a title="GitHub" href="https://github.com/Choromanski/website" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
+													<li><a title="Download" href="https://github.com/Choromanski/website/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- 1550 -->
+									<div name="filter" class="cs1550 c">
+										<div name="project">
+											<h2 class="major collapsible">
+												<i title="C" class="devicon-c-plain"></i>
+												cs1550 Stuff
+											</h2>
+											<div class="content">
+												<p>Add stuff for 1550, update links too
+												<ul class="actions">
+													<li><a title="GitHub" href="https://github.com/Choromanski/rps" class="button special"><i class="fab fa-github"></i> GitHub</a></li>
+													<li><a title="Download" href="https://github.com/Choromanski/rps/archive/master.zip" class="button special"><i class="fas fa-download"></i> Download</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
 									<!-- 1501 -->
 									<div name="filter" class="cs1501 java">
 										<div name="project">
@@ -323,7 +400,7 @@
 										</div>
 										<!-- MISC. -->
 									</div>
-									<div name="filter" class="csmisc other">
+									<div name="filter" class="csmisc javascript">
 										<div name="project">
 											<h2 class="major collapsible">
 												<i title="NodJS" class="devicon-nodejs-plain"></i>
@@ -382,7 +459,7 @@
 											</div>
 										</div>
 									</div>
-									<div name="filter" class="c other">
+									<div name="filter" class="csmisc c">
 										<div name="project">
 											<h2 class="major collapsible">
 												<i title="C" class="devicon-c-plain"></i>
@@ -397,7 +474,7 @@
 											</div>
 										</div>
 									</div>
-									<div name="filter" class="c other">
+									<div name="filter" class="csmisc c">
 										<div name="project">
 											<h2 class="major collapsible">
 												<i title="C" class="devicon-c-plain"></i>
@@ -412,7 +489,7 @@
 											</div>
 										</div>
 									</div>
-									<div name="filter" class="csmisc other">
+									<div name="filter" class="csmisc html">
 										<div name="project">
 											<h2 class="major collapsible">
 												<i title="HTML5" class="devicon-html5-plain"></i>
@@ -522,20 +599,24 @@
 				var projects = document.getElementsByName("filter")
 				for(var i = 0; i < projects.length; i++){
 					if(language.length == 0 && cs.length == 0){
+						// No filters
 						projects[i].style.display = "";
 					}else if(language.length == 0){
+						// Only by class
 						if(cs.includes(projects[i].classList[0])){
 							projects[i].style.display = "";
 						}else{
 							projects[i].style.display = "none";
 						}
 					}else if(cs.length == 0){
-						if(language.includes(projects[i].classList[1])){
+						// Only by language
+						if(language.includes(projects[i].classList[1]) || (projects[i].classList.length == 3 && language.includes(projects[i].classList[2]))){
 							projects[i].style.display = "";
 						}else{
 							projects[i].style.display = "none";
 						}
 					}else{
+						// Class and language
 						if(cs.includes(projects[i].classList[0]) && language.includes(projects[i].classList[1])){
 							projects[i].style.display = "";
 						}else{
