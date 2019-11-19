@@ -1,0 +1,27 @@
+name: Update Firebase Repo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Firebase
+        uses: actions/checkout@v1
+        with:
+          repository: Choromanski/firebase
+          submodules: recursive
+          ref: master
+          token: ${{ secrets.GitHub_PAT }}
+      - name: Update Submodule and Deploy to Firebase
+        run: |
+          cd ../firebase
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+          git submodule update --recursive --remote
+          git commit -m "Updated website" -a
+          git push "https://${GITHUB_ACTOR}:${{ secrets.GitHub_PAT }}@github.com/Choromanski/firebase.git" HEAD:master
+         

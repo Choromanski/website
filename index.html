@@ -4,6 +4,8 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113765033-1"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <!--http://fizzed.com/oss/font-mfizz-->
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -332,16 +334,6 @@
                                     	</span>
                                     </li>
                                     -->
-                                <!--
-                                    <li>
-                                    	<span title="Docker" class="fa-2x">
-                                    		<i class="fab fa-docker"></i>
-                                    		<span class="fa-xs">	
-                                    			Docker
-                                    		</span>
-                                    	</span>
-                                    </li>
-                                    -->
                                 <li>
                                     <span title="Bootstrap" class="fa-2x">
                                     <i class="icon-bootstrap"></i>
@@ -369,16 +361,22 @@
                                     </span>
                                     </span>
                                 </li>
-                                <!--
-                                    <li>
-                                    	<span title="Arduino" class="fa-2x">
-                                    		<i class="fab fa-infinity"></i>
-                                    		<span class="fa-xs">	
-                                    			Arduino
-                                    		</span>
-                                    	</span>
-                                    </li>
-                                    -->
+                                <li>
+                                    <span title="Arduino" class="fa-2x">
+                                        <i class="fas fa-infinity"></i>
+                                        <span class="fa-xs">    
+                                            Arduino
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span title="Raspberry Pi" class="fa-2x">
+                                    <i class="fab fa-raspberry-pi"></i>
+                                    <span class="fa-xs">    
+                                    Raspberry Pi
+                                    </span>
+                                    </span>
+                                </li>
                                 <li>
                                     <span title="Docker" class="fa-2x">
                                     <i class="fab fa-docker"></i>
@@ -459,8 +457,11 @@
                     <div class="inner">
                         <div class="content">
                             <h2 class="major">Experience</h2>
-                            <h3 style="margin: 0 0 0.5em 0;">Software Development Intern</h3>
-                            <div><b>ARRIS Group Inc. - Horsham, PA</b></div>
+                            <h3 style="margin: 0 0 0.5em 0;">Software Engineer</h3>
+                            <div><b>CommScope Inc. - Horsham, PA</b></div>
+                            <div>Network & Cloud Global Services Department</div>
+                            October 2019 - PRESENT
+                            <div><b>ARRIS International PLC - Horsham, PA</b></div>
                             <div>Network & Cloud Global Services Department</div>
                             May 2018 - August 2018
                             <ul>
@@ -518,7 +519,7 @@
                                         <li>University of Pittsburgh - Computer Science and Mathematics</li>
                                         <ul>
                                             <li>Deans List</li>
-                                            <li>CS GPA: 3.36</li>
+                                            <li>CS GPA: 3.51</li>
                                         </ul>
                                         <li>Central Bucks High School South</li>
                                         <ul>
@@ -535,13 +536,16 @@
                                             Computer Science
                                             <ul>
                                                 <h6>
+                                                    <li>Cloud Computing</li>
                                                     <li>Introduction to Operating Systems</li>
                                                     <li>Introduction to Systems Software</li>
                                                     <li>Software Quality Assurance</li>
+                                                    <li>Database Management Systems</li>
                                                     <li>Formal Methods in Computer Science</li>
                                                     <li>Algorithm Implementations</li>
                                                     <li>Programming Languages for Web Applications</li>
                                                     <li>Computer Organization & Assembly Language</li>
+                                                    <li>Intro to Information, Systems, and Society</li>
                                                     <li>Data Structures</li>
                                                     <li>Discrete Structures for Computer Science</li>
                                                     <li>Intermediate Programming Using Java</li>
@@ -558,17 +562,6 @@
                                                     <li>Introduction to Matrices & Linear Algebra</li>
                                                     <li>Analytical Geometry & Calculus 1-3</li>
                                                     <li>Applied Statistical Methods</li>
-                                                </h6>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Misc.
-                                            <ul>
-                                                <h6>
-                                                    <li>Environmental Geology</li>
-                                                    <li>General Chemistry</li>
-                                                    <li>Basic Physical Science and Engineering</li>
-                                                    <li>Intro to Information, Systems, and Society</li>
                                                 </h6>
                                             </ul>
                                         </li>
@@ -595,6 +588,7 @@
                                 Backpacking, Canoeing, & Camping<br />
                                 Swimming<br />
                                 Disc Golf<br />
+                                Ham Radio<br />
                             </p>
                         </div>
                     </div>
@@ -621,8 +615,8 @@
                         <div class="column-left">
                             <ul class="contact">
                                 <li class="fa-home">
-                                    3729 Parkview Ave<br />
-                                    Pittsburgh, PA 15213
+                                    84 Springdale Rd<br />
+                                    Warrington, PA 18976
                                 </li>
                                 <li class="fa-key">
                                     <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x4C0261AF67B89CBC">
@@ -655,12 +649,12 @@
         <script src="assets/js/util.js"></script>
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
-        <script>
+        <!--<script>
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "https://choromanski.herokuapp.com/ip/", true);
             xhr.setRequestHeader("Content-Type", "application/json");
             data = JSON.stringify({domain: window.location.origin + '/', path: window.location.pathname + window.location.search});
             xhr.send(data);
-        </script>
+        </script>-->
     </body>
 </html>
